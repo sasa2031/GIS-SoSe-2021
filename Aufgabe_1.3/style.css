@@ -1,0 +1,75 @@
+body{
+    background-image: url(Hintergrund.png);
+}
+p{
+    font-family: sans-serif;
+    text-align: center;
+}
+.Rand{
+    margin: auto;
+    width: 800px;
+}
+img{
+    margin: auto;
+    width: 800px;
+}
+video{
+    margin: auto;
+    width: 800px;
+}
+
+li{
+    display: inline;
+}
+#Bild{
+    color: crimson;
+    font-family: sans-serif;
+    text-align: center;
+}
+.headlines{
+    color: crimson;
+    font-family: sans-serif;
+    text-align: center;
+}
+#list{
+    position: fixed;
+    top: 0;
+    list-style-type: none;
+    float: right;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: teal;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+#list a{
+    display: inline;
+    padding: 1em;
+    text-align: center;
+    border: 0.05em solid black;
+}
+#list a:hover{
+    background-color: burlywood;
+}
+input[type=submit]{
+    background-color: lightgray;
+    border: none;
+    color: white;
+    width: 50%;
+    cursor: pointer;
+    padding:1em  0.5em;
+}
+input[type=button]{
+    width: 50%;
+   padding: 0.5em ;
+    margin: 1em;
+    background-color: lightgray;
+    color: white;
+    border: none;
+
+}
+#current{
+    color: turquoise;
+}
+
