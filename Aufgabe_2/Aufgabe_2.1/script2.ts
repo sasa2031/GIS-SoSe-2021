@@ -54,17 +54,20 @@ function max(): void {
     if (i > h)
     console.log(i);
 
-    if (i < h)
+    else if (i < h)
     console.log(h);
 }
 max();
 
 //c)
 function count(): void {
-    let z: number = 0;
-    while (z < 100); {
-        z ++;
-        console.log(z);
+    let z: number = 1;
+    let result: number = 0;
+    while (z <= 100); {
+        result += z;
+        ++z;
+       
+        console.log(result);
     }
    
 }

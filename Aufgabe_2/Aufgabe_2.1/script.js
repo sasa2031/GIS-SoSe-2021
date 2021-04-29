@@ -4,7 +4,10 @@ function a1() {
     let x = "Alles";
     debugger;
     console.log(x);
+    func4();
+    console.log(x);
     func();
+    console.log(x);
     console.log("Logo!");
 }
 a1();
@@ -13,7 +16,11 @@ function func() {
 } //a)Konsole gibt "Alles Klar? Logo!" aus. Zuverlässig: let, var, const.
 //b) zuerst wird "Alles" ausgegeben, dann wird die Funktion func1(); aufgerufen. Der Debugger
 //springt in die Codezeile und die Konsole gibt "Klar?" aus. Er springt 
-//zurück in die a1(); Funktion und gibt dann "Logo!"aus.              
+//zurück in die a1(); Funktion und gibt dann "Logo!"aus.      
+//c)
+function func4() {
+    console.log("Gute!");
+}
 //Aufgabe 2
 //durch hinschauen: wir haben eine Funktion a2(); die eine Zahlenvariable "i"
 //mit dem Wert 9 besitzt. Die Funktion hat eine do-while Schleife sie sagt, solange

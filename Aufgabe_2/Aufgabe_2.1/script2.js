@@ -46,18 +46,20 @@ function max() {
     let h = 11;
     if (i > h)
         console.log(i);
-    if (i < h)
+    else if (i < h)
         console.log(h);
 }
 max();
 //c)
 function count() {
-    let z = 0;
-    while (z < 100)
+    let z = 1;
+    let result = 0;
+    while (z <= 100)
         ;
     {
-        z++;
-        console.log(z);
+        result += z;
+        ++z;
+        console.log(result);
     }
 }
 count();
