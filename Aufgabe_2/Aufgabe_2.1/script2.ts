@@ -63,12 +63,14 @@ max();
 function count(): void {
     let z: number = 1;
     let result: number = 0;
-    while (z <= 100); {
+    debugger;
+    while (z <= 100) {
         result += z;
         ++z;
        
-        console.log(result);
+        
     }
+    console.log(result);
    
 }
 count();

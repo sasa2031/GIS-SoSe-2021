@@ -54,13 +54,12 @@ max();
 function count() {
     let z = 1;
     let result = 0;
-    while (z <= 100)
-        ;
-    {
+    debugger;
+    while (z <= 100) {
         result += z;
         ++z;
-        console.log(result);
     }
+    console.log(result);
 }
 count();
 //# sourceMappingURL=script2.js.map
