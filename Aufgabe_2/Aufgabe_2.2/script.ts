@@ -22,7 +22,7 @@ namespace Aufgabe_2_2 {
 
     //a)
 
-    function min(_emptyArray: number[]): number {
+    function min(..._emptyArray: number[]): number {
         let minimum: number = _emptyArray[0];
         for (let i: number = 0; i < _emptyArray.length; i++) {
             if (minimum > _emptyArray[i]) {
@@ -31,7 +31,7 @@ namespace Aufgabe_2_2 {
         }
         return minimum;
     }
-    console.log(min([5, 42, 17, 2018, -10, 60, -10010]));
+    console.log(min());
 
     //c)
     interface Student {
