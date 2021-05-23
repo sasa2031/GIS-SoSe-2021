@@ -117,19 +117,19 @@ namespace Aufgabe_2_5 {
         description.appendChild(text);
 
         let defaultImage: HTMLImageElement = document.createElement("img"); //bild anlegen
-        defaultImage.src = "fragezeichen.png"; //bild aufrufen
+        defaultImage.src = "images/fragezeichen.png"; //bild aufrufen
         defaultImage.style.width = "100px";
         defaultImage.style.margin = "1em";
         div.appendChild(defaultImage);
 
         let defaultImage2: HTMLImageElement = document.createElement("img"); //bild anlegen
-        defaultImage2.src = "fragezeichen.png"; //bild aufrufen
+        defaultImage2.src = "images/fragezeichen.png"; //bild aufrufen
         defaultImage2.style.width = "100px";
         defaultImage2.style.margin = "1em";
         div.appendChild(defaultImage2);
 
         let defaultImage3: HTMLImageElement = document.createElement("img"); //bild anlegen
-        defaultImage3.src = "fragezeichen.png"; //bild aufrufen
+        defaultImage3.src = "images/fragezeichen.png"; //bild aufrufen
         defaultImage3.style.width = "100px";
         defaultImage3.style.margin = "1em";
 
@@ -157,14 +157,14 @@ namespace Aufgabe_2_5 {
         div.appendChild(savedSizeImage);
 
         let defaultImage: HTMLImageElement = document.createElement("img"); //bild anlegen
-        defaultImage.src = "fragezeichen.png"; //bild aufrufen
+        defaultImage.src = "images/fragezeichen.png"; //bild aufrufen
         defaultImage.style.width = "100px";
         defaultImage.style.margin = "1em";
 
         div.appendChild(defaultImage);
 
         let defaultImage2: HTMLImageElement = document.createElement("img"); //bild anlegen
-        defaultImage2.src = "fragezeichen.png"; //bild aufrufen
+        defaultImage2.src = "images/fragezeichen.png"; //bild aufrufen
         defaultImage2.style.width = "100px";
         defaultImage2.style.margin = "1em";
         div.appendChild(defaultImage2);
@@ -197,7 +197,7 @@ namespace Aufgabe_2_5 {
         div.appendChild(savedToppingImage);
 
         let defaultImage: HTMLImageElement = document.createElement("img"); //bild anlegen
-        defaultImage.src = "fragezeichen.png"; //bild aufrufen
+        defaultImage.src = "images/fragezeichen.png"; //bild aufrufen
         defaultImage.style.width = "100px";
         defaultImage.style.margin = "1em";
         div.appendChild(defaultImage);
