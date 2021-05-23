@@ -18,7 +18,7 @@ var Aufgabe_2_2;
     //Dadurch wird das Ergebnis nie "0" oder "1" und es kann nicht "true" oder "false" ausgegeben werden.
     //
     //a)
-    function min(_emptyArray) {
+    function min(..._emptyArray) {
         let minimum = _emptyArray[0];
         for (let i = 0; i < _emptyArray.length; i++) {
             if (minimum > _emptyArray[i]) {
@@ -27,7 +27,7 @@ var Aufgabe_2_2;
         }
         return minimum;
     }
-    console.log(min([5, 42, 17, 2018, -10, 60, -10010]));
+    console.log(min());
     let s1 = createStudent("Alice", "Wonderland", 24, 1234);
     let s2 = createStudent("Daphne", "Bridgerton", 20, 5678);
     let s3 = createStudent("Lady", "Whistledown", 18, 8975);
