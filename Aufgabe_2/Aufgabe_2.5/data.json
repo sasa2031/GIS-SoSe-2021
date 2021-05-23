@@ -2,43 +2,43 @@
     "groesse": [
         {
             "option": "20cm",
-            "image": "pizza_20.png"
+            "image": "images/pizza_20.png"
         },
         {
             "option": "25cm",
-            "image": "pizza_25.png"
+            "image": "images/pizza_25.png"
         },
         {
             "option": "30cm",
-            "image": "pizza_30.png"
+            "image": "images/pizza_30.png"
         }
     ],
     "toppings": [
         {
             "option": "Salami",
-            "image": "salami.png"
+            "image": "images/salami.png"
         },
         {
             "option": "Mais",
-            "image": "mais.png"
+            "image": "images/mais.png"
         },
         {
             "option": "Champignons",
-            "image": "Champignons.png"
+            "image": "images/Champignons.png"
         }
     ],
     "service": [
         {
             "option": "Lieferung",
-            "image": "lieferung.png"
+            "image": "images/lieferung.png"
         },
         {
             "option": "Abholung",
-            "image": "abholung.png"
+            "image": "images/abholung.png"
         },
         {
             "option": "Vorort",
-            "image": "vorort.png"
+            "image": "images/vorort.png"
         }
     ]
 }
