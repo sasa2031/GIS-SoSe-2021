@@ -1,0 +1,23 @@
+{
+  "name": "gis-sose-2021",
+  "version": "0.0.1",
+  "description": "Bitte funktionier lol",
+  "main": "index.js",
+  "dependencies": {
+    "@types/node": "^15.6.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node Aufgabe_3/Aufgabe_3.1/server.js"  
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sasa2031/GIS-SoSe-2021.git"
+  },
+  "author": "Salina Weldemariam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sasa2031/GIS-SoSe-2021/issues"
+  },
+  "homepage": "https://github.com/sasa2031/GIS-SoSe-2021#readme"
+}
