@@ -1,21 +1,33 @@
 
-//Aufgabe 2
-async function Data(_pURL: RequestInfo): Promise<void> {
-    let response: Response = await fetch(_pURL);
-    console.log("Response", response);
-    let formData: FormData = new FormData(document.forms[0]); //neues Formelement anlegen und mit 1. Form befüllen
+namespace P_3_1 {
 
-    //Daten per GET mit fetch senden 
-    let url: string = "https://salinasapp.herokuapp.com";
-    let query: URLSearchParams = new URLSearchParams(<any>formData); 
-    url = url + "?" + query.toString(); //query an url anfügen
-    await fetch(url);
 
-    formData.get("fname");
-    formData.get("lname");
-    formData.get("email");
+    //Aufgabe 2
+
+    let button: HTMLButtonElement = <HTMLButtonElement>document.getElementById("button");
+    button.addEventListener("click", Data);
+
+
+    async function Data(): Promise<void> {
+
+        let formData: FormData = new FormData(document.forms[0]);
+        console.log(":" + formData.get("fname"));
+
+        for (let entry of formData) {
+
+            console.log("name: " + entry[0]);
+            console.log("value: " + entry[1]);
+        }
+        let query: URLSearchParams = new URLSearchParams(<any>formData);
+        let url: RequestInfo = "https://salinasapp.herokuapp.com";
+
+        url = url + "?" + query.toString();
+        console.log(url);
+
+
+        let response: Response = await fetch(url);
+        let answer: string = await response.text();
+
+        console.log(answer);
+    }
 }
-
-Data("https://salinasapp.herokuapp.com");
-
-
