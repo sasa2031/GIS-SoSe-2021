@@ -17,7 +17,8 @@ var P_3_1;
         console.log(url);
         let response = await fetch(url);
         let answer = await response.text();
-        console.log(answer);
+        let display = document.getElementById("sendDataServer");
+        display.innerText = answer;
     }
 })(P_3_1 || (P_3_1 = {}));
 //# sourceMappingURL=script.js.map

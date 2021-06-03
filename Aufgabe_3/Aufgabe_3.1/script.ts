@@ -27,7 +27,7 @@ namespace P_3_1 {
 
         let response: Response = await fetch(url);
         let answer: string = await response.text();
-
-        console.log(answer);
+        let display: HTMLParagraphElement = <HTMLDivElement>document.getElementById("sendDataServer");
+        display.innerText = answer;
     }
 }
