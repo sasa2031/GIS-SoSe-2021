@@ -1,13 +1,13 @@
 
 namespace Aufgabe_3_2 {
 
-    interface Person {
-        [key: string]: string;
-    }
-    let assarray: Person = {};
-    assarray["fname"] = "Salina";
-    assarray["lname"] = "Weldemariam";
-    assarray["email"] = "salina.weldemariam@hs-furtwangen.de";
+    // interface Person {
+    //     [key: string]: string;
+    // }
+    // let assarray: Person = {};
+    // assarray["fname"] = "Salina";
+    // assarray["lname"] = "Weldemariam";
+    // assarray["email"] = "salina.weldemariam@hs-furtwangen.de";
 
 
     let button: HTMLButtonElement = <HTMLButtonElement>document.getElementById("button");
@@ -19,7 +19,7 @@ namespace Aufgabe_3_2 {
 
     
     let formData: FormData = new FormData(document.forms[0]);
-    console.log(":" + formData.get("name"));
+    // console.log(":" + formData.get("name"));
 
     for (let entry of formData) {
 
@@ -35,7 +35,7 @@ namespace Aufgabe_3_2 {
 
     let response: Response = await fetch(url);
     let answer: string = await response.text();
-    let display: HTMLParagraphElement = <HTMLDivElement>document.getElementById("sendDataServer");
+    let display: HTMLParagraphElement = <HTMLParagraphElement>document.getElementById("sendDataServer");
     display.innerText = answer;
 }
 }
