@@ -18,7 +18,7 @@ var P_3_1;
     function handleRequest(_request, _response) {
         console.log("I hear voices!"); //wird in Server Konsole ausgegeben
         _response.setHeader("content-type", "text/html; charset=utf-8");
-        _response.setHeader("Access-Control-Allow-Origin", "*");
+        _response.setHeader("Access-Control-Allow-Origin", "*"); //Sicherheitsmechanismen ausschalten, damit von überall Zugriff möglich ist
         _response.write(_request.url); //Anfrage mit localhost:8100/hhuicjsl senden
         _response.end();
         console.log(_request.url);

@@ -11,7 +11,7 @@ namespace P_3_1 {
     async function Data(): Promise<void> {
 
         let formData: FormData = new FormData(document.forms[0]);
-        console.log(":" + formData.get("fname"));
+        console.log(":" + formData.get("name"));
 
         for (let entry of formData) {
 
