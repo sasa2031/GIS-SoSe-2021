@@ -29,6 +29,7 @@ var P_3_1;
             }
         }
         if (url.pathname == "https://salinasapp.herokuapp.com/json") {
+            _response.setHeader("content-type", "application/json");
             let jsonString = JSON.stringify(url.pathname);
             _response.write(jsonString);
         }

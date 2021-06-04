@@ -23,20 +23,21 @@ export namespace P_3_1 {
         _response.setHeader("Access-Control-Allow-Origin", "*");
         _response.write(_request.url); //Anfrage mit localhost:8100/hhuicjsl senden
         _response.end();
-
-
+        
+        
         let url: Url.UrlWithParsedQuery = Url.parse(_request.url, true);
-
+        
         if (url.pathname == "https://salinasapp.herokuapp.com/html") {
             for (let key in url.query) {
                 _response.write(key + ":" + url.query[key]);
-
-
+                
+                
             }
         }
-
+        
         if (url.pathname == "https://salinasapp.herokuapp.com/json") {
-
+            
+            _response.setHeader("content-type", "application/json");
             let jsonString: string = JSON.stringify(url.pathname);
             _response.write(jsonString);
 
