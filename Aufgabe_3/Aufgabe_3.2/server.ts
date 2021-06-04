@@ -19,35 +19,36 @@ export namespace Aufgabe_3_2 {
 
 
     function handleRequest(_request: Http.IncomingMessage, _response: Http.ServerResponse): void {
-        // console.log("I hear voices!"); //wird in Server Konsole ausgegeben
+        console.log("I hear voices!"); //wird in Server Konsole ausgegeben
         _response.setHeader("Access-Control-Allow-Origin", "*");
         // _response.write(_request.url); //Anfrage mit localhost:8100/hhuicjsl senden
-        _response.end();
-
-
+        
+        
         let url: Url.UrlWithParsedQuery = Url.parse(_request.url, true);
-
-
+        
+        
         if (url.pathname == "https://salinasapp.herokuapp.com/html") {
             _response.setHeader("content-type", "text/html; charset=utf-8");
-
+            
             for (let key in url.query) {
-
+                
                 _response.write(key + ":" + url.query[key]);
-
-
+                
+                
             }
         }
-
+        
         if (url.pathname == "https://salinasapp.herokuapp.com/json") {
             _response.setHeader("content-type", "application/json");
-
+            
             let jsonString: string = JSON.stringify(url.pathname);
-
-            _response.write(jsonString);
-
+            
+            console.log(jsonString);
+            
+            
         }
-
+        
+        _response.end();
     }
 }
 
