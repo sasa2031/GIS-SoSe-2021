@@ -28,7 +28,7 @@ var Aufgabe_3_2;
             }
         }
         if (url.pathname == "/json") {
-            _response.setHeader("content-type", "application/json");
+            // _response.setHeader("content-type", "application/json");
             let jsonString = JSON.stringify(url.query);
             console.log(jsonString);
             _response.write(jsonString);
