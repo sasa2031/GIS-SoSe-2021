@@ -32,18 +32,17 @@ export namespace Aufgabe_3_2 {
 
             for (let key in url.query) {
 
-                _response.write(key + ":" + url.query[key]);
+                _response.write(key + ":" + url.query[key] + ", " + " " );
 
 
             }
         }
 
         if (url.pathname == "/json") {
-            // _response.setHeader("content-type", "application/json");
 
             let jsonString: string = JSON.stringify(url.query);
 
-            console.log(jsonString);
+            console.log(url.query);
             _response.write(jsonString);
 
         }

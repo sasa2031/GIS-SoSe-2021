@@ -24,13 +24,12 @@ var Aufgabe_3_2;
         let url = Url.parse(_request.url, true);
         if (url.pathname == "/html") {
             for (let key in url.query) {
-                _response.write(key + ":" + url.query[key]);
+                _response.write(key + ":" + url.query[key] + ", " + " ");
             }
         }
         if (url.pathname == "/json") {
-            // _response.setHeader("content-type", "application/json");
             let jsonString = JSON.stringify(url.query);
-            console.log(jsonString);
+            console.log(url.query);
             _response.write(jsonString);
         }
         _response.end();
