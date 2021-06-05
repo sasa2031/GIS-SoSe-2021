@@ -1,10 +1,10 @@
 "use strict";
 var Aufgabe_3_2;
 (function (Aufgabe_3_2) {
-    let assarray = {};
-    assarray["fname"] = "";
-    assarray["lname"] = "";
-    assarray["email"] = "";
+    // let assarray: Person = {};
+    // assarray["fname"] = "";
+    // assarray["lname"] = "";
+    // assarray["email"] = "";
     let button = document.getElementById("button");
     button.addEventListener("click", DataHTML);
     let buttonJSON = document.getElementById("JSbutton");

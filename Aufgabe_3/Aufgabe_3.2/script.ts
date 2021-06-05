@@ -4,10 +4,10 @@ namespace Aufgabe_3_2 {
     interface Person {
         [key: string]: string;
     }
-    let assarray: Person = {};
-    assarray["fname"] = "";
-    assarray["lname"] = "";
-    assarray["email"] = "";
+    // let assarray: Person = {};
+    // assarray["fname"] = "";
+    // assarray["lname"] = "";
+    // assarray["email"] = "";
 
 
     let button: HTMLButtonElement = <HTMLButtonElement>document.getElementById("button");
