@@ -19,18 +19,19 @@ var Aufgabe_3_2;
     function handleRequest(_request, _response) {
         console.log("I hear voices!"); //wird in Server Konsole ausgegeben
         _response.setHeader("Access-Control-Allow-Origin", "*");
+        _response.setHeader("content-type", "text/html; charset=utf-8");
         // _response.write(_request.url); //Anfrage mit localhost:8100/hhuicjsl senden
         let url = Url.parse(_request.url, true);
-        if (url.pathname == "https://salinasapp.herokuapp.com/html") {
-            _response.setHeader("content-type", "text/html; charset=utf-8");
+        if (url.pathname == "/html") {
             for (let key in url.query) {
                 _response.write(key + ":" + url.query[key]);
             }
         }
-        if (url.pathname == "https://salinasapp.herokuapp.com/json") {
+        if (url.pathname == "/json") {
             _response.setHeader("content-type", "application/json");
-            let jsonString = JSON.stringify(url.pathname);
+            let jsonString = JSON.stringify(url.query);
             console.log(jsonString);
+            _response.write(jsonString);
         }
         _response.end();
     }
