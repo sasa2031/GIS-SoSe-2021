@@ -4,11 +4,13 @@
   "description": "Bitte funktionier lol",
   "main": "index.js",
   "dependencies": {
-    "@types/node": "^15.6.1"
+    "@types/mongodb": "^3.6.18",
+    "@types/node": "^15.6.1",
+    "mongodb": "^3.6.9"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node Aufgabe_3/Aufgabe_3.2/server.js"  
+    "start": "node Aufgabe_3/Aufgabe_3.4/Server/server.js"
   },
   "repository": {
     "type": "git",
