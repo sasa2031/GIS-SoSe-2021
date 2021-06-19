@@ -7,7 +7,7 @@ var P_3_1;
     console.log("Starting server");
     let port = Number(process.env.PORT);
     if (!port)
-        port = 8100; //port wie ein hafen -> hier soll nummer 8100 verwendet werden
+        port = 8100; //port wie ein hafen (hier soll nummer 8100 verwendet werden), um Daten auszutauschen
     let server = Http.createServer();
     server.addListener("request", handleRequest); //wie EventListener, horcht auf wenn request reinkommt
     server.addListener("listening", handleListen);
