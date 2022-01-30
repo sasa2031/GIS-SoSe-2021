@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="Client/script_show.js" defer></script> -->
+    <script src="Client/script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Gefrierschrank</title>
+</head>
+
+<body>
+    <header>
+        
+        <div id="navigation">
+            <a href="Uebersicht.html">Hier geht es zurück zur Übersicht</a></li>
+        </div>
+    </header>
+    <main>
+    <h3 class="headlines">Was soll in Dein Gefrierschrank?</h3>
+    
+    <form id="myForm">
+        <aside> <label for="name">Name:</label> </aside>
+        <input type="text" id="name" name="name" value="">
+        <aside> <label for="expire">Ablaufdatum:</label> </aside>
+        <input type="date" id="expire" name="expire" value="">
+        <aside> <label for="message">Notiz:</label></aside>
+        <textarea type="text" id="message" name="message" value=""></textarea>
+        <p></p>
+        <aside> <label for="categorie">Kategorie:</label></aside>
+        <select name="categorie" id="categorie" multiple>
+            <option value="meat">Fleisch 🍗</option>
+            <option value="meat">Fisch 🐟</option>
+            <option value="meat">Obst 🍒</option>
+            <option value="meat">Gemüse 🍅</option>
+            <option value="meat">Pizza 🍕</option>
+            <option value="meat">Pommes 🍟</option>
+        </select>
+       </form>
+    <p id="date"> </p>
+    <p id="serverResponse"></p>
+
+
+    <button type="button" id="button">Anlegen</button> 
+   <button type="submit" id="buttonDisplay">Gefrierschrank</button> 
+    <button type="button" id="editButton">Bearbeiten</button> 
+    </main>
+</body>
+
+
+</html>

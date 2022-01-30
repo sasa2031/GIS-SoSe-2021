@@ -1,0 +1,38 @@
+body {
+    background-image: url(images/Hintergrund.jpg)
+}
+.headlines {
+    color: black;
+    text-align: center;
+    font-size: 2em;
+}
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 3em;
+}
+#navigation a {
+    color: black;
+    text-align:end;
+    font-size: 1.25em;
+    border: 0.05em solid black;
+    padding: 1em;
+    display: inline;
+}
+
+#navigation a:hover {
+    background-color: blanchedalmond
+}
+
+
+/* input[type=text]{
+    width: 25%;
+   padding: 3em ;
+    margin: 1em;
+    background-color: lightblue;
+    color: black;
+    border: none;
+} */
+
+
+
