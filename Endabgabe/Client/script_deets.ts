@@ -1,22 +1,31 @@
 namespace Endabgabe {
 
-    let deleteButton: HTMLButtonElement = <HTMLButtonElement> document.getElementById("deleteButton");
-    deleteButton.addEventListener("click", deleteData);
+    let deleteButton: HTMLButtonElement = <HTMLButtonElement>document.getElementById("deleteButton");
+    deleteButton.addEventListener("click", remove);
 
-    async function deleteData(): Promise<void> {
-    
-        let formData: FormData = new FormData(document.forms[0]);
-    
-        // tslint:disable-next-line: no-any
-        let query: URLSearchParams = new URLSearchParams(<any>formData);
-        let url: RequestInfo = "https://salinasapp.herokuapp.com";
-        // let url: RequestInfo = "http://localhost:8100";
-    
-        url += "/delete";
-    
-        url = url + "?" + query.toString();
-        let response: Response = await fetch(url);
-        let answer: string = await response.text();
-        console.log(answer);
+    let buttonShow: HTMLButtonElement = <HTMLButtonElement>document.getElementById("buttonShow");
+    if (buttonShow) {
+
+        buttonShow.addEventListener("click", storage);
     }
+
+
+    function storage(): void {
+        let display: HTMLParagraphElement = <HTMLParagraphElement>document.getElementById("serverResponse");
+
+        display.innerHTML = localStorage.getItem("chosenContent");
+
+    }
+
+    function remove(): void {
+
+        delete localStorage.chosenContent;
+        let display: HTMLParagraphElement = <HTMLParagraphElement>document.getElementById("serverResponse");
+        display.innerHTML = "";
+    }
+    // tslint:disable-next-line: typedef
+    let today = new Date();
+    // tslint:disable-next-line: typedef
+    let day = today.toLocaleDateString();
+    document.getElementById("date").innerHTML = "Anlegedatum: " + "" + day;
 }

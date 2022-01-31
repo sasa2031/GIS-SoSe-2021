@@ -58,12 +58,10 @@ export namespace Endabgabe {
             _response.setHeader("content-type", "application/json");
 
             let jsonString: string = JSON.stringify(url.query);
+
+
             _response.write(jsonString);
 
-        }
-        if (url.pathname == "/delete") {
-
-            forms.deleteOne({ "name": url.query["name"], "Ablaufdatum": url.query["expire"], "Notiz": url.query["message"], "categorie": url.query["categorie"] });
 
         }
 

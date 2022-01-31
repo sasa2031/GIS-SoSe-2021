@@ -45,9 +45,6 @@ var Endabgabe;
             let jsonString = JSON.stringify(url.query);
             _response.write(jsonString);
         }
-        if (url.pathname == "/delete") {
-            forms.deleteOne({ "name": url.query["name"], "Ablaufdatum": url.query["expire"], "Notiz": url.query["message"], "categorie": url.query["categorie"] });
-        }
         _response.end();
     }
 })(Endabgabe = exports.Endabgabe || (exports.Endabgabe = {}));

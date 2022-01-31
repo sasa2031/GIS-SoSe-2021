@@ -6,19 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="Client/script_deets.js" defer></script>    
+    <script src="Client/script_deets.js" defer></script>
     <title>Gefrierschrank</title>
 </head>
 
 <body>
     <header>
-    <h3 class="headlines">Du bist was Du isst!</h3>
-   
+        <div id="navigation">
+            <a href="Uebersicht.html">Zurück zur Übersicht</a>
+        </div>
     </header>
     <main>
-        <button type="button" id="deleteButton">Löschen</button>
-        <button type="button" id="editButton">Bearbeiten</button>
-
+        <h2 class="headlines">Du bist was Du isst!</h2>
+        <h4> Mit einem Klick kannst Du Deinen Eintrag bearbeiten</h4>
+        <button type="button" id="deleteButton" class="button">Löschen</button>
+        <!-- <a href="Anlegen.html"> <button type="button" id="deleteButton">Bearbeiten</button></a> -->
+        <button type="button" id="buttonShow" class="button">Anzeigen</button>
+        <a href="Anlegen.html">
+            <p id="serverResponse"></p>
+        </a>
+        <p id="date"> </p>
     </main>
 </body>
 

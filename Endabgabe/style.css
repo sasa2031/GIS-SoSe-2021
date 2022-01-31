@@ -4,35 +4,99 @@ body {
 .headlines {
     color: black;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
 }
-h1 {
-    color: black;
-    text-align: center;
-    font-size: 3em;
+
+* main {
+    display: block;
 }
-#navigation a {
+
+div a {
     color: black;
     text-align:end;
-    font-size: 1.25em;
+    font-size: 0.75em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: 0.05em solid black;
     padding: 1em;
     display: inline;
 }
 
 #navigation a:hover {
-    background-color: blanchedalmond
+    background-color: whitesmoke;
+}
+
+h2 ~ h4 {
+text-align: center;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 1.5em;
+}
+
+div {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+    float: right;  
+    display: block;
+}
+
+.button {
+    background-color: cornflowerblue;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25em;
+    border: 0.05em solid black;
+    box-sizing: border-box;
+    padding: 12px;
+    
+}
+.button:hover {
+    background-color: lightblue;
+}
+#btn {
+    padding: 10px;
+}
+#date {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+}
+
+/* Anlegeseite */
+input, textarea, select {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    width: 20%;
+    padding: 12px;
+    margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input:focus {
+   background-color: lightblue;
+}
+
+textarea:focus {
+   background-color: lightblue;
+}
+select:focus {
+   background-color: lightblue;
+}
+
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+}
+
+#buttonDisplay::marker{
+font-display: red;
 }
 
 
-/* input[type=text]{
-    width: 25%;
-   padding: 3em ;
-    margin: 1em;
-    background-color: lightblue;
-    color: black;
-    border: none;
-} */
+
+/* Übersichtseite & Detailsseite*/
+
+a>#serverResponse {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+}
 
 
 

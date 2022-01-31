@@ -2,18 +2,24 @@
 var Endabgabe;
 (function (Endabgabe) {
     let deleteButton = document.getElementById("deleteButton");
-    deleteButton.addEventListener("click", deleteData);
-    async function deleteData() {
-        let formData = new FormData(document.forms[0]);
-        // tslint:disable-next-line: no-any
-        let query = new URLSearchParams(formData);
-        let url = "https://salinasapp.herokuapp.com";
-        // let url: RequestInfo = "http://localhost:8100";
-        url += "/delete";
-        url = url + "?" + query.toString();
-        let response = await fetch(url);
-        let answer = await response.text();
-        console.log(answer);
+    deleteButton.addEventListener("click", remove);
+    let buttonShow = document.getElementById("buttonShow");
+    if (buttonShow) {
+        buttonShow.addEventListener("click", storage);
     }
+    function storage() {
+        let display = document.getElementById("serverResponse");
+        display.innerHTML = localStorage.getItem("chosenContent");
+    }
+    function remove() {
+        delete localStorage.chosenContent;
+        let display = document.getElementById("serverResponse");
+        display.innerHTML = "";
+    }
+    // tslint:disable-next-line: typedef
+    let today = new Date();
+    // tslint:disable-next-line: typedef
+    let day = today.toLocaleDateString();
+    document.getElementById("date").innerHTML = "Anlegedatum: " + "" + day;
 })(Endabgabe || (Endabgabe = {}));
 //# sourceMappingURL=script_deets.js.map
